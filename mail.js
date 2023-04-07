@@ -1,5 +1,5 @@
 const firebaseConfig = {
-    apiKey: "",
+    apiKey: "AIzaSyDTV8Ga-maKTuJQhmL1wZPCX_fqdnYT83U",
     authDomain: "contactform-a2722.firebaseapp.com",
     databaseURL: "https://contactform-a2722-default-rtdb.firebaseio.com",
     projectId: "contactform-a2722",
