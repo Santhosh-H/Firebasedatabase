@@ -1,5 +1,5 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyDTV8Ga-maKTuJQhmL1wZPCX_fqdnYT83U",
+    apiKey: "",
     authDomain: "contactform-a2722.firebaseapp.com",
     databaseURL: "https://contactform-a2722-default-rtdb.firebaseio.com",
     projectId: "contactform-a2722",
@@ -12,7 +12,7 @@ const firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
   
   // reference your database
-  var contactFormDB = firebase.database().ref("contactForm");
+  var contactFormDB = firebase.database().ref("sandy",);
   
   document.getElementById("contactForm").addEventListener("submit", submitForm);
   
