@@ -1,5 +1,11 @@
 const firebaseConfig = {
-    //   copy your firebase config informations
+    apiKey: "AIzaSyDTV8Ga-maKTuJQhmL1wZPCX_fqdnYT83U",
+    authDomain: "contactform-a2722.firebaseapp.com",
+    databaseURL: "https://contactform-a2722-default-rtdb.firebaseio.com",
+    projectId: "contactform-a2722",
+    storageBucket: "contactform-a2722.appspot.com",
+    messagingSenderId: "938144955245",
+    appId: "1:938144955245:web:a62c5c6cf604fb25d6f864"
   };
   
   // initialize firebase
