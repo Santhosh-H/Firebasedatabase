@@ -5,8 +5,10 @@ from firebase_admin import credentials, auth
 app = Flask(__name__)
 
 # Firebase Admin SDK initialization
-cred = credentials.Certificate('static/key.json')
-firebase_admin.initialize_app(cred)
+cred = credentials.Certificate('key.json')
+firebase_admin.initialize_app(cred, {
+    'projectId': 'test-653fc'
+})
 
 @app.route('/')
 def home():
@@ -23,7 +25,8 @@ def signup():
                 password=password
             )
             return redirect('/login')
-        except:
+        except Exception as e:
+            print(e)
             error = "Unable to create account. Please try again."
             return render_template('signup.html', error=error)
     return render_template('signup.html')
