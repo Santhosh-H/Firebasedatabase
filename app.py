@@ -7,7 +7,13 @@ app = Flask(__name__)
 # Firebase Admin SDK initialization
 cred = credentials.Certificate('key.json')
 firebase_admin.initialize_app(cred, {
-    'projectId': 'test-653fc'
+  "apiKey": "AIzaSyAtmsy6n_5JfOj1VgdasvGNnE1L6T5hE2Q",
+  "authDomain": "test-653fc.firebaseapp.com",
+  "projectId": "test-653fc",
+  "storageBucket": "test-653fc.appspot.com",
+  "messagingSenderId": "703564637211",
+  "appId": "1:703564637211:web:258c0ca9bb8a247c9784be",
+  "measurementId": "G-WTRTPXHP85"
 })
 
 @app.route('/')
